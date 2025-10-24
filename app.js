@@ -39,11 +39,11 @@ function showNotification(message) {
         top: 20px;
         left: 50%;
         transform: translateX(-50%);
-        background: linear-gradient(90deg, #9333EA 0%, #7C3AED 100%);
+        background: linear-gradient(90deg, #00BCD4 0%, #00ACC1 100%);
         color: white;
         padding: 15px 30px;
         border-radius: 20px;
-        box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+        box-shadow: 0 10px 25px rgba(0, 188, 212, 0.4);
         font-size: 16px;
         font-weight: 600;
         z-index: 1000;

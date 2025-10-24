@@ -16,7 +16,7 @@ body {
 .container {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(135deg, #E5D9F2 0%, #F5EEF8 100%);
+    background: linear-gradient(135deg, #E0F7FA 0%, #F0FDFF 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,10 +44,10 @@ body {
 .title {
     font-size: 42px;
     font-weight: 800;
-    color: #7C3AED;
+    color: #00ACC1;
     text-align: center;
     letter-spacing: -0.5px;
-    text-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+    text-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
     margin: 0;
 }
 
@@ -65,7 +65,7 @@ body {
     max-width: 300px;
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 10px 30px rgba(124, 58, 237, 0.4));
+    filter: drop-shadow(0 10px 30px rgba(0, 188, 212, 0.4));
     animation: float 3s ease-in-out infinite;
 }
 
@@ -79,7 +79,7 @@ body {
 .subtitle {
     font-size: 22px;
     font-weight: 600;
-    color: #6D28D9;
+    color: #0097A7;
     margin-bottom: 12px;
 }
 
@@ -106,7 +106,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: linear-gradient(90deg, #9333EA 0%, #7C3AED 100%);
+    background: linear-gradient(90deg, #00BCD4 0%, #00ACC1 100%);
     color: white;
     border: none;
     border-radius: 25px;
@@ -114,19 +114,19 @@ body {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 188, 212, 0.4);
     transition: all 0.3s ease;
     -webkit-tap-highlight-color: transparent;
 }
 
 .get-started-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 35px rgba(124, 58, 237, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 188, 212, 0.5);
 }
 
 .get-started-btn:active {
     transform: translateY(0);
-    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4);
 }
 
 /* Login Button */
@@ -135,7 +135,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: linear-gradient(90deg, #9333EA 0%, #7C3AED 100%);
+    background: linear-gradient(90deg, #00BCD4 0%, #00ACC1 100%);
     color: white;
     border: none;
     border-radius: 25px;
@@ -143,19 +143,19 @@ body {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 188, 212, 0.4);
     transition: all 0.3s ease;
     -webkit-tap-highlight-color: transparent;
 }
 
 .login-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 35px rgba(124, 58, 237, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 188, 212, 0.5);
 }
 
 .login-btn:active {
     transform: translateY(0);
-    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4);
 }
 
 .airplane-icon,

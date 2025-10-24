@@ -4,8 +4,8 @@
   "description": "Your AI Travel Assistant - Ready to help you plan your next adventure!",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#E5D9F2",
-  "theme_color": "#8B5CF6",
+  "background_color": "#E0F7FA",
+  "theme_color": "#00BCD4",
   "orientation": "portrait-primary",
   "icons": [
     {
