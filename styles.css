@@ -90,6 +90,16 @@ body {
     padding: 0 20px;
 }
 
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.4s ease-out;
+}
+
 /* Get Started Button */
 .get-started-btn {
     display: flex;
@@ -100,14 +110,12 @@ body {
     color: white;
     border: none;
     border-radius: 25px;
-    padding: 16px 40px;
+    padding: 16px 35px;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
     transition: all 0.3s ease;
-    margin-bottom: 20px;
-    animation: fadeInUp 1.4s ease-out;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -121,7 +129,37 @@ body {
     box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
 }
 
-.airplane-icon {
+/* Login Button */
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #9333EA 0%, #7C3AED 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 16px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(124, 58, 237, 0.5);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+}
+
+.airplane-icon,
+.user-icon {
     width: 24px;
     height: 24px;
 }
@@ -185,8 +223,16 @@ body {
         max-width: 250px;
     }
     
-    .get-started-btn {
-        padding: 14px 35px;
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .get-started-btn,
+    .login-btn {
+        width: 100%;
+        padding: 14px 30px;
         font-size: 16px;
     }
 }

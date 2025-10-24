@@ -14,6 +14,20 @@ function handleGetStarted() {
     showNotification('Welcome to Travel Agent! 🌍✈️');
 }
 
+// Handle Login Button Click
+function handleLogin() {
+    console.log('Login button clicked!');
+    
+    // Add haptic feedback for mobile devices
+    if (navigator.vibrate) {
+        navigator.vibrate(50);
+    }
+    
+    // You can add login functionality here
+    // For now, we'll show a notification
+    showNotification('Login feature coming soon! 🔐');
+}
+
 // Show notification function
 function showNotification(message) {
     // Create notification element
