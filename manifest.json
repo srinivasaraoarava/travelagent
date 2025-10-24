@@ -1,0 +1,19 @@
+{
+  "name": "Travel Agent",
+  "short_name": "Travel Agent",
+  "description": "Your AI Travel Assistant - Ready to help you plan your next adventure!",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#E5D9F2",
+  "theme_color": "#8B5CF6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "Assets/Agent.PNG",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

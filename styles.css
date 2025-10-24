@@ -1,0 +1,227 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* Container with Gradient Background */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #E5D9F2 0%, #F5EEF8 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Content Wrapper */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Header */
+.header {
+    margin-bottom: 30px;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #7C3AED;
+    text-align: center;
+    letter-spacing: -0.5px;
+    text-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+    margin: 0;
+}
+
+/* Agent Image Section */
+.agent-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    animation: fadeInUp 1s ease-out;
+}
+
+.agent-image img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(124, 58, 237, 0.4));
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    margin: 30px 0;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: #6D28D9;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 16px;
+    color: #6B7280;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #9333EA 0%, #7C3AED 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.4s ease-out;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.get-started-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(124, 58, 237, 0.5);
+}
+
+.get-started-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+}
+
+.airplane-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .title {
+        font-size: 36px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    }
+    
+    .description {
+        font-size: 15px;
+    }
+    
+    .agent-image img {
+        max-width: 250px;
+    }
+    
+    .get-started-btn {
+        padding: 14px 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .title {
+        font-size: 32px;
+    }
+    
+    .agent-image img {
+        max-width: 200px;
+    }
+    
+    .content {
+        padding: 30px 15px;
+    }
+}
+
+/* Landscape Mode */
+@media (orientation: landscape) and (max-height: 600px) {
+    .content {
+        min-height: auto;
+        padding: 20px;
+    }
+    
+    .agent-image img {
+        max-width: 200px;
+    }
+    
+    .title {
+        font-size: 32px;
+    }
+    
+    .welcome-section {
+        margin: 15px 0;
+    }
+}
+
